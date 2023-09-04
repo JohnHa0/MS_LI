@@ -11,8 +11,11 @@ on:
   #    - master
   schedule:
     - cron: '20 0-8 * * *'
-  watch:
-    types: [started]
+  # watch:
+  #   types: [started]
+  workflow_dispatch:
+    inputs:
+  
    
 jobs:
   build:
