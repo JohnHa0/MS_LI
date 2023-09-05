@@ -6,16 +6,14 @@ on:
     types: [published, created, edited]
   push:
     tags:
-    - 'v*'
-  #  branches: 
-  #    - master
+      - 'v*'
+    branches: 
+      - master
   schedule:
-    - cron: '20 0-8 * * *'
-  # watch:
-  #   types: [started]
+    - cron: '22 */2 * * *'
   workflow_dispatch:
     inputs:
-  
+   
    
 jobs:
   build:
